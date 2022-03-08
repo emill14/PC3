@@ -35,3 +35,7 @@ dato= {"arrayColores":[{ "celulares2015": [
 }
 dato_string = json.dumps(dato)
 print ('ENCODED:', dato_string)
+
+decoded = json.loads(dato_string)
+print ('DECODED:', decoded)
+print ("Hay "+ str(decoded["arrayColores"][0]["celulares2015"][1]["Cantidad"])+" celulares verdes")
