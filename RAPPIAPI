@@ -67,5 +67,78 @@
       }
     ]
 }
-import json
 
+import json
+data2= {"id de tienda": "900103361",
+  "elementos": [{ "name": "Hamburguesa de pollo a la parrilla", "description": "Descripción de la hamburguesa de pollo a la parrilla",
+          "precio": 14000,
+          "sku": "10",
+          "posición de clasificación": 0,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019638",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "name": "Hamburguesas",
+              "posición de clasificación": 0
+          },
+          "niños": [
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "nombre": "Papas fritas",
+                  "description": "papas fritas crujientes",
+                  "precio": 5000,
+                  "sku": "1",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              },
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "name": "Patatas en gajos",
+                  "precio": 7000,
+                  "sku": "2",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              }
+          ]
+      },
+      {
+          "name": "Pizza hawaiana",
+          "description": "descripción de la pizza hawaiana",
+          "precio": 18000,
+          "sku": "11",
+          "posición de clasificación": 1,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019639",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "nombre": "Pizzas",
+              "posición de clasificación": 1
+          },
+          "niños": []
+      }
+    ]
+}
+
+data2_string = json.dumps(data2)
+print ('ENCODED:', data2_string)
+
+decoded = json.loads(data2_string)
+print ('DECODED:', decoded)
+
+print ("El"+ str(decoded['name'][3]) + "es" + str(decoded)["Hamburguesa de pollo a la parrilla"][4]
