@@ -1,0 +1,198 @@
+#Nombres de usuario:
+@emill14
+@valeria1999ac
+@hyahua
+
+
+#Ejercicio Json
+#Lectura sin json
+#Lectura sin json
+{"arrayColores":[{ "celulares2015": [
+    {"nombreColor":"rojo", "valorHexadec":"#f00", "Cantidad":10},
+    {"nombreColor":"verde", "valorHexadec":"#0f0", "Cantidad":33},
+    {"nombreColor":"azul", "valorHexadec":"#00f", "Cantidad":15}
+   ]},
+                 
+  {"celulares2018":[
+      {"nombreColor":"cyan","valorHexadec":"#0ff", "Cantidad":19},
+      {"nombreColor":"magenta", "valorHexadec":"#f0f", "Cantidad":15}
+   ]},
+  {"celulares2020":[
+    {"nombreColor":"amarillo", "valorHexadec":"#ff0", "Cantidad":22},
+    {"nombreColor":"negro","valorHexadec":"#000", "Cantidad":10}
+    ]}
+ ]
+}
+
+import json
+dato= {"arrayColores":[{ "celulares2015": [
+    {"nombreColor":"rojo", "valorHexadec":"#f00", "Cantidad":10},
+    {"nombreColor":"verde", "valorHexadec":"#0f0", "Cantidad":33},
+    {"nombreColor":"azul", "valorHexadec":"#00f", "Cantidad":15}
+   ]},
+                 
+  {"celulares2018":[
+      {"nombreColor":"cyan","valorHexadec":"#0ff", "Cantidad":19},
+      {"nombreColor":"magenta", "valorHexadec":"#f0f", "Cantidad":15}
+   ]},
+  {"celulares2020":[
+    {"nombreColor":"amarillo", "valorHexadec":"#ff0", "Cantidad":22},
+    {"nombreColor":"negro","valorHexadec":"#000", "Cantidad":10}
+    ]}
+ ]
+}
+
+dato_string = json.dumps(dato)
+print ('ENCODED:', dato_string)
+
+decoded = json.loads(dato_string)
+print ('DECODED:', decoded)
+
+print ("Hay "+ str(decoded["arrayColores"][0]["celulares2015"][1]["Cantidad"])+" celulares verdes")
+
+
+#Ejercicio Api
+#Lectura sin json
+{
+  "id de tienda": "900103361",
+  "elementos": [
+      {
+          "name": "Hamburguesa de pollo a la parrilla",
+          "description": "Descripción de la hamburguesa de pollo a la parrilla",
+          "precio": 14000,
+          "sku": "10",
+          "posición de clasificación": 0,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019638",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "name": "Hamburguesas",
+              "posición de clasificación": 0
+          },
+          "niños": [
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "nombre": "Papas fritas",
+                  "description": "papas fritas crujientes",
+                  "precio": 5000,
+                  "sku": "1",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              },
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "name": "Patatas en gajos",
+                  "precio": 7000,
+                  "sku": "2",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              }
+          ]
+      },
+      {
+          "name": "Pizza hawaiana",
+          "description": "descripción de la pizza hawaiana",
+          "precio": 18000,
+          "sku": "11",
+          "posición de clasificación": 1,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019639",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "nombre": "Pizzas",
+              "posición de clasificación": 1
+          },
+          "niños": []
+      }
+    ]
+}
+import json
+data2= {"id de tienda": "900103361",
+  "elementos": [{ "name": "Hamburguesa de pollo a la parrilla", "description": "Descripción de la hamburguesa de pollo a la parrilla",
+          "precio": 14000,
+          "sku": "10",
+          "posición de clasificación": 0,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019638",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "name": "Hamburguesas",
+              "posición de clasificación": 0
+          },
+          "niños": [
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "nombre": "Papas fritas",
+                  "description": "papas fritas crujientes",
+                  "precio": 5000,
+                  "sku": "1",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              },
+              {
+                  "categoría": {
+                      "id": "211",
+                      "cantidad máxima": 1,
+                      "cantidad mínima": 0,
+                      "name": "¿Quieres agregar?",
+                      "posición de clasificación": 0
+                  },
+                  "name": "Patatas en gajos",
+                  "precio": 7000,
+                  "sku": "2",
+                  "límitemáximo": 1,
+                  "posición de clasificación": 1,
+                  "tipo": "CUBIERTA"
+              }
+          ]
+      },
+      {
+          "name": "Pizza hawaiana",
+          "description": "descripción de la pizza hawaiana",
+          "precio": 18000,
+          "sku": "11",
+          "posición de clasificación": 1,
+          "tipo": "PRODUCTO",
+          "categoría": {
+              "id": "2090019639",
+              "cantidad máxima": 0,
+              "cantidad mínima": 0,
+              "nombre": "Pizzas",
+              "posición de clasificación": 1
+          },
+          "niños": []
+      }
+    ]
+}
+
+data2_string = json.dumps(data2)
+print ('ENCODED:', data2_string)
+
+decoded = json.loads(data2_string)
+print ('DECODED:', decoded)
+
+print ("El"+ str(decoded['name'][3]) + "es" + str(decoded)["Hamburguesa de pollo a la parrilla"][4]
