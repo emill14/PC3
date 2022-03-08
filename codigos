@@ -1,0 +1,35 @@
+#Lectura sin json
+{"arrayColores":[{ "celulares2015": [
+    {"nombreColor":"rojo", "valorHexadec":"#f00", "Cantidad":10},
+    {"nombreColor":"verde", "valorHexadec":"#0f0", "Cantidad":33},
+    {"nombreColor":"azul", "valorHexadec":"#00f", "Cantidad":15}
+   ]},
+                 
+  {"celulares2018":[
+      {"nombreColor":"cyan","valorHexadec":"#0ff", "Cantidad":19},
+      {"nombreColor":"magenta", "valorHexadec":"#f0f", "Cantidad":15}
+   ]},
+  {"celulares2020":[
+    {"nombreColor":"amarillo", "valorHexadec":"#ff0", "Cantidad":22},
+    {"nombreColor":"negro","valorHexadec":"#000", "Cantidad":10}
+    ]}
+ ]
+}
+
+import json
+dato= {"arrayColores":[{ "celulares2015": [
+    {"nombreColor":"rojo", "valorHexadec":"#f00", "Cantidad":10},
+    {"nombreColor":"verde", "valorHexadec":"#0f0", "Cantidad":33},
+    {"nombreColor":"azul", "valorHexadec":"#00f", "Cantidad":15}
+   ]},
+                 
+  {"celulares2018":[
+      {"nombreColor":"cyan","valorHexadec":"#0ff", "Cantidad":19},
+      {"nombreColor":"magenta", "valorHexadec":"#f0f", "Cantidad":15}
+   ]},
+  {"celulares2020":[
+    {"nombreColor":"amarillo", "valorHexadec":"#ff0", "Cantidad":22},
+    {"nombreColor":"negro","valorHexadec":"#000", "Cantidad":10}
+    ]}
+ ]
+}
