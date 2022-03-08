@@ -1,0 +1,69 @@
+{
+  "storeId": "900103361",
+  "items": [
+      {
+          "name": "Grilled Chicken Burger",
+          "description": "Grilled chicken burger description",
+          "price": 14000,
+          "sku": "10",
+          "sortingPosition": 0,
+          "type": "PRODUCT",
+          "category": {
+              "id": "2090019638",
+              "maxQty": 0,
+              "minQty": 0,
+              "name": "Burgers",
+              "sortingPosition": 0
+          },
+          "children": [
+              {
+                  "category": {
+                      "id": "211",
+                      "maxQty": 1,
+                      "minQty": 0,
+                      "name": "Do you want to add?",
+                      "sortingPosition": 0
+                  },
+                  "name": "French Fries",
+                  "description": "crunchy french fries",
+                  "price": 5000,
+                  "sku": "1",
+                  "maxLimit": 1,
+                  "sortingPosition": 1,
+                  "type": "TOPPING"
+              },
+              {
+                  "category": {
+                      "id": "211",
+                      "maxQty": 1,
+                      "minQty": 0,
+                      "name": "Do you want to add?",
+                      "sortingPosition": 0
+                  },
+                  "name": "Potato Wedges",
+                  "price": 7000,
+                  "sku": "2",
+                  "maxLimit": 1,
+                  "sortingPosition": 1,
+                  "type": "TOPPING"
+              }
+          ]
+      },
+      {
+          "name": "Hawaiian Pizza",
+          "description": "hawaiian pizza description",
+          "price": 18000,
+          "sku": "11",
+          "sortingPosition": 1,
+          "type": "PRODUCT",
+          "category": {
+              "id": "2090019639",
+              "maxQty": 0,
+              "minQty": 0,
+              "name": "Pizzas",
+              "sortingPosition": 1
+          },
+          "children": []
+      }
+    ]
+}
