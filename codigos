@@ -33,3 +33,5 @@ dato= {"arrayColores":[{ "celulares2015": [
     ]}
  ]
 }
+dato_string = json.dumps(dato)
+print ('ENCODED:', dato_string)
